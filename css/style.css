@@ -725,7 +725,7 @@ main, header {
 
 }
 @media (max-width: 768px) {
-  .events-container {
+  .events-grid {
     flex-direction: column;
     align-items: center;  
   }
@@ -735,3 +735,15 @@ main, header {
     max-width: 400px;
   }
 }
+@media (max-width: 768px) {
+  .schedule-grid {
+    flex-direction: column; /* stack cards vertically */
+    align-items: center;    /* center them */
+  }
+
+  .event-card {
+    width: 90%; /* take most of the screen width */
+    max-width: 400px;
+  }
+}
+

@@ -722,4 +722,16 @@ main, header {
 
 .official-email:hover {
     color: #00f0b5;
+
+}
+@media (max-width: 768px) {
+  .events-container {
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  .event-card {
+    width: 90%; 
+    max-width: 400px;
+  }
 }

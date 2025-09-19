@@ -788,4 +788,67 @@ main, header {
     gap: 0.5rem;
   }
 }
+/* These are the default styles for desktop */
+h2 {
+  font-size: 2.8rem;
+}
 
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.2rem; 
+  }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .section-intro {
+        font-size: 1rem;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;+
+    }
+
+    section {
+        padding: 60px 0; 
+    }
+
+    #hero h2 {
+        font-size: 2rem; 
+    }
+
+    .features-grid, .main-events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .complementary-card {
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+    #registration-form {
+        margin-top: 40px;
+    }
+}

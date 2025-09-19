@@ -233,4 +233,22 @@ document.addEventListener('DOMContentLoaded', () => {
         return regex.test(phone);
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.main-nav');
+
+    hamburger.addEventListener('click', () => {
+        // Toggle the 'active' class on both the hamburger and the menu
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Optional: Close the menu when a link is clicked
+    document.querySelectorAll('.main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+});
 
